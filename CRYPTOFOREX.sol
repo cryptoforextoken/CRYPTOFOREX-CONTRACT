@@ -321,7 +321,7 @@ contract CRYPTOFOREX is StandardToken {
      totalMinted = 0;
      
      balances[msg.sender] = 10000000000;
-     Transfer(0x0000000000000000000000000000000000000000, msg.sender, 10000000000);
+     Transfer(address(0), msg.sender, 10000000000);
   }
   
   event Burned(address indexed owner, uint256 indexed value, uint256 indexed timestamp);
